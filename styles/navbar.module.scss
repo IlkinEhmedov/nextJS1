@@ -1,0 +1,43 @@
+.header {
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .links {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            position: relative;
+            cursor: pointer;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            span {
+                position: absolute;
+                top: -5px;
+                right: -7px;
+                width: 15px;
+                font-size: .9em;
+                height: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+                color: white;
+                padding: 5px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
