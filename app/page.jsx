@@ -5,7 +5,7 @@ import Basket from "@/components/basket";
 
 
 export default async function Home() {
-  const response = await fetch('https://chatapp-znz3.onrender.com/api/v1/auth/find-all', { next: { revalidate: 20 } })
+  const response = await fetch('https://chatapp-znz3.onrender.com/api/v1/auth/find-all', { next: { revalidate: 60 } })
   const products = await response.json()
   return (
     <Box className={styles.page} sx={{ padding: 4 }}>
