@@ -10,21 +10,18 @@
     justify-content: center;
 
     .loader {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
-        border: 8px dotted white;
+        border: 10px dotted rgb(219, 159, 137);
+        border-top-color: orangered;
         animation: spinner infinite linear 2s;
     }
 }
 
 
 @keyframes spinner {
-    from {
-        transform: rotate(360deg);
-    }
-
     to {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 }

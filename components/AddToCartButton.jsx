@@ -1,5 +1,5 @@
 "use client"
-import { BasketContext } from '@/context/basketContext'
+import { BasketContext } from '../context/basketContext'
 import { Box, Button } from '@mui/material'
 import React, { useContext } from 'react'
 

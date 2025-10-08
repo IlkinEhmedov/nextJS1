@@ -1,9 +1,12 @@
-import AddToCartButton from "@/components/AddToCartButton";
 import { Box, Card, Grid } from "@mui/material";
 import styles from "./page.module.scss";
-import Basket from "@/components/basket";
+import Basket from "../components/basket";
+import AddToCartButton from "../components/AddToCartButton";
 
-
+export const metadata = {
+  title: 'ana sehife',
+  description: "ilk next.js projecti",
+}
 export default async function Home() {
   const response = await fetch('https://chatapp-znz3.onrender.com/api/v1/auth/find-all', { next: { revalidate: 60 } })
   const products = await response.json()
