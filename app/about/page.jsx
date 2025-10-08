@@ -1,6 +1,6 @@
 import { Box, Card, Grid } from "@mui/material"
 
-export default async function News() {
+export default async function About() {
     const products = await fetch('https://chatapp-znz3.onrender.com/api/v1/auth/find-all', { cache: 'no-store' })
         .then(x => x.json())
 
