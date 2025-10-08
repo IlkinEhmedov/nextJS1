@@ -53,13 +53,13 @@ export default function Navbar() {
             >
                 <List sx={{ width: 250 }}>
                     <ListItem button="true" sx={{ cursor: 'pointer' }} onClick={() => setOpen(false)}>
-                        <ListItemText primary="Home" />
+                        <List ItemText primary="Home" />
                     </ListItem>
                     <ListItem button="true" sx={{ cursor: 'pointer' }} onClick={() => setOpen(false)}>
-                        <ListItemText primary="Profile" />
+                        <List ItemText primary="Profile" />
                     </ListItem>
                     <ListItem button="true" sx={{ cursor: 'pointer' }} onClick={() => setOpen(false)}>
-                        <ListItemText primary="Settings" />
+                        <List ItemText primary="Settings" />
                     </ListItem>
                 </List>
             </Drawer>
